@@ -18,7 +18,7 @@ export default {
         shoeDark: withOpacity("--shoeDark"),
         shoeDarkBrown: withOpacity("--shoeDarkBrown"),
         shoeBrown: withOpacity("--shoeBrown"),
-        shoeOrange: withOpacity("--shoeLightOrange"),
+        shoeOrange: withOpacity("--shoeOrange"),
         shoeLightOrange: withOpacity("--shoeLightOrange"),
         shoeBackground: withOpacity("--shoeBackground"),
       },
