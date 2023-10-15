@@ -2,6 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --shoeGray: 182, 190, 201;
+  --shoeDark: 17, 8, 6;
+  --shoeDarkBrown: 94, 64, 55;
+  --shoeBrown: 164, 78, 49;
+  --shoeOrange: 252, 95, 34;
+  --shoeLightOrange: 237, 144, 93;
+  --shoeBackground: 252, 252, 252;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(var(--shoeBackground));
+}
+
+/* Navbar Overlay  */
+
+header[data-overlay="true"]::after,
+header[data-overlay="false"]::after {
+  @apply content-[""] absolute inset-0 bg-gradient-to-t from-shoeDark/75 to-shoeDark/25 backdrop-blur-sm pointer-events-none opacity-0 transition-all duration-300 ease-in-out;
+}
+
+header[data-overlay="true"]::after {
+  @apply opacity-100;
+}
+/* Navbar  */
+@media (max-width: 1023px) {
+  .navbar {
+    @apply fixed p-8 w-[75%] max-w-[300px] top-0 bg-shoeDark h-full text-shoeBackground rounded-s-3xl shadow-lg right-[-100%] transition-all duration-300 ease-in-out;
+  }
+  .open {
+    @apply right-0 opacity-100 z-10;
+  }
 }
