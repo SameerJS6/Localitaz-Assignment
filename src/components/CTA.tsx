@@ -12,9 +12,11 @@ export default function CTA() {
             <input
               type="text"
               placeholder="Type your email here"
-              className="ctainput flex-1 px-4 rounded-md"
+              className="ctainput flex-1 px-4 rounded-md leading-7"
             />
-            <Button className="uppercase hover:shadow-md">join us</Button>
+            <Button className="uppercase tracking-wider hover:shadow-md">
+              join us
+            </Button>
           </div>
         </div>
 
