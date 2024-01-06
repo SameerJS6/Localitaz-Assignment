@@ -14,7 +14,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: rgb(var(--shoeBackground));
+  background-color: rgba(var(--shoeLightOrange), 0.25);
 }
 
 /* Navbar Overlay  */

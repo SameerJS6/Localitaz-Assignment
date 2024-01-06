@@ -15,7 +15,7 @@ export default function Navbar({}: NavbarProps) {
   return (
     <header
       data-overlay={isOpen}
-      className="flex items-center justify-between sm:px-6 sm:pr-3 xl:px-24"
+      className="flex items-center justify-between px-4 sm:px-6 sm:pr-3 xl:px-24"
     >
       <div className="flex items-center justify-between max-lg:w-full">
         <h1 className="text-3xl font-semibold tracking-tight">Shoes</h1>
