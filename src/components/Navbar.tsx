@@ -67,9 +67,9 @@ export default function Navbar({}: NavbarProps) {
             />
           </svg>
         </Button>
-        <ul className="flex flex-col lg:flex-row gap-4 lg:items-center justify-center h-[75%]">
+        <ul className="flex flex-col lg:flex-row gap-4 lg:items-center justify-center h-[75%] ">
           {navLinks.map((link, index) => (
-            <NavLink key={index} title={link} />
+            <NavLink href={link} key={index} title={link} />
           ))}
         </ul>
       </nav>

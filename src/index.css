@@ -12,6 +12,9 @@
   --shoeBackground: 252, 252, 252;
 }
 
+* {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Roboto", sans-serif;
   background-color: rgba(var(--shoeLightOrange), 0.25);
